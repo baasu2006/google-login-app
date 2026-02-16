@@ -1,0 +1,9 @@
+<h2>Welcome {{ user.username }}</h2>
+<p>Your Preference: {{ user.preference }}</p>
+
+<button onclick="startSpeech()">🎤 Speech to Text</button>
+<p id="output"></p>
+
+<button onclick="speakText()">🔊 Text to Speech</button>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
