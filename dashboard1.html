@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Welcome <span id="user"></span></h2>
+
+    <p>Your Preferred Language: <span id="pref"></span></p>
+
+    <script>
+        document.getElementById("user").innerText =
+            localStorage.getItem("username");
+
+        document.getElementById("pref").innerText =
+            localStorage.getItem("preference");
+    </script>
+</body>
+</html>
